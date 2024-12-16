@@ -1,0 +1,292 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.BG{
+    display: flex;
+    justify-content: center;
+    min-height: 700px;
+    padding-bottom: 60px; /* Same as footer height */
+    box-sizing: border-box;
+}
+.containerA{
+    position: relative;
+    max-width: 1250px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #265e1a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerA h1{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.containerA h2{
+    position: relative;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.containerA form{
+    position: relative;
+    border-radius: 3px;
+    margin-top: 16px;
+    min-height: 520px;
+    background-color: #fff;
+    padding: 15px 30px;
+}
+
+.containerA form .info{
+    margin-top: 10px;
+}
+
+.containerA form .title{
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.containerA .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.fields .inputField2{
+    display: flex;
+    width: calc(100% / 2 - 10px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.fields .inputField3{
+    display: flex;
+    width: calc(100% / 3 - 10px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+
+.fields label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.fields input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 40px;
+    margin: 3px 0 8px 0;
+}
+
+.fields select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 40px;
+    margin: 3px 0 8px 0;
+}
+
+.fields input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.fields input[type="date"]{
+    color: #070707;
+}
+
+.fields input[type="date"]:valid{
+    color: #333;
+}
+
+.containerA .table-container {
+    min-height: 550px; /* Adjust height as needed */
+    overflow-y: auto;
+    margin-bottom: 35px; /* Space for fixed buttons */
+  }
+
+.containerA .Btn{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 10px 0;
+}
+
+.containerA .Btn button{
+    width: 200px;
+    height: 40px;
+    background: #265e1a;
+    border: 1px solid #aaa;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0 3 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800;
+}
+.containerA .pagination-buttons {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Move to the right */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+.containerA th{
+    font-size: 14px;
+}
+
+.containerA td{
+    font-size: 12px;
+}
+
+.U-Btn{
+    left: 0px;
+    position: relative;
+    margin: 10px;
+}
+.U-Btn label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.U-Btn img{
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+}
+.U-Btn span{
+    position: relative;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.U-Btn .U-input{
+    left: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 105px;
+    text-align: center;
+    border-radius: 4px;
+}
+.U-Btn .U-input input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+/* ----------approval----------- */
+
+.containerA .tbl td button{
+    margin-right: 8px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.table-actions {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+  }
+
+.nxtprev{
+    margin-right: 10px;
+    padding: 2px 4px;
+    border: solid 1px #aaa;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.pagefont{
+    font-size: 13px;
+    color: white;
+}
+
+.containerV {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #265e1a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.containerV .content {
+    position: relative;
+    border-radius: 3px;
+    max-height: 100%;
+    background-color: #fff;
+    padding: 10px 100px;
+}
+
+.containerV h1 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.containerV .viewfield {
+    background: #e9ecef;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+.containerV .viewfield h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+.containerV .viewfield p {
+    margin: 5px 0;
+    color: #555;
+  }
+.containerV .fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
